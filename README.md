@@ -13,10 +13,10 @@ API ini adalah layanan internal untuk mengelola ulasan film dari studio Ghibli, 
 
 ## Cara menjalankan Proyek
 
-1.Clone repostory ini: 'git clone https://github.com/KevinMaulanaAtmaja/api-ulasan-film.git'
-2.Masuk ke direktory: 'cd api-ulasan-film'
-3.Install dependensi: 'npm install'
-4.Jalankan server: 'node server.js'
+1. Clone repostory ini: 'git clone https://github.com/KevinMaulanaAtmaja/api-ulasan-film.git'
+2. Masuk ke direktory: 'cd api-ulasan-film'
+3. Install dependensi: 'npm install'
+4. Jalankan server: 'node server.js'
 server akan berjalan di ‘http://localhost:3300‘.
 
 ## Daftar Endpoint
