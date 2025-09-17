@@ -43,6 +43,22 @@ app.get("/", (req, res) => {
   res.send("Test!");
 }); 
 
+
+// get
+app.get("/reviews", (req, res) => {
+  res.json(reviews);
+});
+
+// get id
+app.get("/reviews/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const review = reviews.find((r) => r.id === id);
+  if (!review) {
+    return res.status(404).json({ error: "Review tidak ditemukan" });
+  }
+  res.json(review);
+});
+
 // post
 app.post("/reviews", (req, res) => {
   const { id, filmid, user, rating, comment } = req.body;
