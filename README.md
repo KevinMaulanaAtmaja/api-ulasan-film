@@ -2,7 +2,7 @@
 
 ## Anggota kelompok
 
-- Kevin Maulana Atmaja (36245830)
+- Kevin Maulana Atmaja (362458302011)
 - Cristiano Ronaldo (362458302008)
 - Muhammad Mufqi Fajar (362458302067)
 - Muhammad Abi Hafidh (362458302056)

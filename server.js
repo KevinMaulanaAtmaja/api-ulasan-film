@@ -87,4 +87,24 @@ app.put("/reviews/:id", (req, res) => {
     res.status(200).json({ message: "Review berhasil diperbarui", data: updatedReview });
 });
 
+// delete by id
+app.delete("/reviews/:id", (req, res) => {
+    const reviewId = parseInt(req.params.id);
+    const reviewIndex = reviews.findIndex((r) => r.id === reviewId);
+
+    if (reviewIndex === -1) {
+        return res.status(404).json({ message: "Review tidak ditemukan" });
+    }
+
+    reviews.splice(reviewIndex, 1);
+    res.status(204).send();
+    // res.status(200).json({ message: "Review berhasil dihapus" });
+});
+
+// saat endpoint tdk ditemukan
+app.use((req, res) => {
+  res.status(404).json({ error: "Endpoint tidak ditemukan" });
+});
+
+
 app.listen(PORT, () => console.log(`Server running on port http://localhost:${PORT}`));
